@@ -1,0 +1,28 @@
+$ORIGIN corp-demo.test.
+$TTL 300
+
+@       IN SOA ns1.corp-demo.test. admin.corp-demo.test. (
+            2026042601
+            7200
+            3600
+            1209600
+            300
+)
+@       IN NS  ns1.corp-demo.test.
+ns1     IN A   172.28.0.53
+
+@         IN A 172.28.0.10
+www       IN A 172.28.0.10
+api       IN A 172.28.0.10
+admin     IN A 172.28.0.10
+dev       IN A 172.28.0.10
+docs      IN A 172.28.0.10
+jenkins   IN A 172.28.0.10
+manager   IN A 172.28.0.10
+console   IN A 172.28.0.10
+sso       IN A 172.28.0.10
+secure    IN A 172.28.0.10
+status    IN A 172.28.0.10
+vpn-gw    IN A 172.28.0.10
+search    IN A 172.28.0.10
+intel     IN A 172.28.0.10

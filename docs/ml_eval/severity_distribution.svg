@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="430" viewBox="0 0 760 430"><rect width="100%" height="100%" fill="#ffffff"/>
+<text x="24.0" y="36.0" text-anchor="start" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#0f172a">CVE Severity Distribution</text>
+<line x1="90.0" y1="70.0" x2="90.0" y2="340.0" stroke="#334155" stroke-width="1.5"/>
+<line x1="90.0" y1="340.0" x2="720.0" y2="340.0" stroke="#334155" stroke-width="1.5"/>
+<rect x="90.0" y="319.7" width="135.0" height="20.3" fill="#22c55e" stroke="#0f172a"/>
+<text x="157.5" y="311.7" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#0f172a">4977</text>
+<text x="157.5" y="368.0" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="normal" fill="#0f172a">LOW</text>
+<rect x="255.0" y="70.0" width="135.0" height="270.0" fill="#f59e0b" stroke="#0f172a"/>
+<text x="322.5" y="62.0" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#0f172a">66117</text>
+<text x="322.5" y="368.0" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="normal" fill="#0f172a">MEDIUM</text>
+<rect x="420.0" y="141.6" width="135.0" height="198.4" fill="#ef4444" stroke="#0f172a"/>
+<text x="487.5" y="133.6" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#0f172a">48580</text>
+<text x="487.5" y="368.0" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="normal" fill="#0f172a">HIGH</text>
+<rect x="585.0" y="279.8" width="135.0" height="60.2" fill="#7f1d1d" stroke="#0f172a"/>
+<text x="652.5" y="271.8" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#0f172a">14746</text>
+<text x="652.5" y="368.0" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="normal" fill="#0f172a">CRITICAL</text>
+</svg>

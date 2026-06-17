@@ -1,0 +1,49 @@
+text,label
+www example com Apache welcome to nginx,web_site
+blog example com nginx personal blog home,web_site
+news example com IIS company news portal,web_site
+shop example com Apache online store product,web_site
+portal example com nginx enterprise portal home,web_site
+static example com nginx static resource cdn,web_site
+home example com Apache corporate homepage,web_site
+official example com IIS official website,web_site
+admin example com Tomcat admin panel management system,admin_panel
+manage example com Tomcat backend management console,admin_panel
+backend example com nginx admin dashboard login,admin_panel
+console example com Tomcat operations control panel,admin_panel
+oa example com Tomcat office automation management,admin_panel
+cms example com Apache content management system admin,admin_panel
+erp example com JBoss enterprise resource planning system,admin_panel
+crm example com Tomcat customer relationship management,admin_panel
+api example com nginx api gateway service,api_service
+gateway example com Kong api gateway service,api_service
+service example com nginx microservice api endpoint,api_service
+graphql example com Node graphql api service,api_service
+rpc example com nginx remote procedure call service,api_service
+openapi example com nginx openapi rest service,api_service
+swagger example com nginx swagger ui api docs,api_service
+dev example com Werkzeug development environment debug,dev_test_system
+test example com nginx test environment staging,dev_test_system
+staging example com Apache staging environment pre-release,dev_test_system
+uat example com Tomcat user acceptance testing system,dev_test_system
+qa example com nginx quality assurance test environment,dev_test_system
+sandbox example com nginx sandbox development test,dev_test_system
+debug example com Werkzeug flask debug mode development,dev_test_system
+mysql example com phpMyAdmin database management phpmyadmin,database_service
+redis example com Redis Commander redis database,database_service
+mongo example com Mongo Express mongodb database management,database_service
+db example com Adminer database management tool,database_service
+elastic example com Kibana elasticsearch index management,database_service
+pgsql example com pgAdmin postgresql database,database_service
+jenkins example com Jenkins CI CD continuous integration,middleware_service
+gitlab example com GitLab code repository git,middleware_service
+jira example com Jira project management issue tracking,middleware_service
+grafana example com Grafana metrics monitoring dashboard,middleware_service
+prometheus example com Prometheus monitoring alerting,middleware_service
+nacos example com Nacos service discovery configuration,middleware_service
+rabbitmq example com RabbitMQ message queue broker,middleware_service
+kibana example com Kibana log analysis elasticsearch,middleware_service
+unknown1 example com nginx 403 forbidden,unknown
+unknown2 example com Apache default page,unknown
+unknown3 example com IIS under construction,unknown
+unknown4 example com nginx coming soon,unknown

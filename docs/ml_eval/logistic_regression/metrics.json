@@ -1,0 +1,51 @@
+{
+  "model": "logistic_regression",
+  "model_path": "models\\cve_severity\\logistic_regression.pkl",
+  "accuracy": 0.951197738431781,
+  "macro_precision": 0.8964832105358286,
+  "macro_recall": 0.9579038724364941,
+  "macro_f1": 0.9225849921459404,
+  "weighted_precision": 0.9549154181187726,
+  "weighted_recall": 0.951197738431781,
+  "weighted_f1": 0.9520918135463194,
+  "train_seconds": 41.207597599997825,
+  "classification_report": {
+    "LOW": {
+      "precision": 0.7093632958801498,
+      "recall": 0.9508032128514057,
+      "f1-score": 0.8125268125268126,
+      "support": 996.0
+    },
+    "MEDIUM": {
+      "precision": 0.9796306570500118,
+      "recall": 0.9347349315586478,
+      "f1-score": 0.9566563467492261,
+      "support": 13223.0
+    },
+    "HIGH": {
+      "precision": 0.9483805668016194,
+      "recall": 0.9643886372993001,
+      "f1-score": 0.9563176158399673,
+      "support": 9716.0
+    },
+    "CRITICAL": {
+      "precision": 0.9485583224115334,
+      "recall": 0.9816887080366226,
+      "f1-score": 0.9648391934677554,
+      "support": 2949.0
+    },
+    "accuracy": 0.951197738431781,
+    "macro avg": {
+      "precision": 0.8964832105358286,
+      "recall": 0.9579038724364941,
+      "f1-score": 0.9225849921459404,
+      "support": 26884.0
+    },
+    "weighted avg": {
+      "precision": 0.9549154181187726,
+      "recall": 0.951197738431781,
+      "f1-score": 0.9520918135463194,
+      "support": 26884.0
+    }
+  }
+}

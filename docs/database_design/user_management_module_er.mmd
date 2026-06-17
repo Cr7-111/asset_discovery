@@ -1,0 +1,23 @@
+graph TD;
+  ADMIN["管理员"];
+  USER["用户"];
+  REL_MANAGE{"管理"};
+
+  ADMIN -->|1| REL_MANAGE;
+  REL_MANAGE -->|N| USER;
+
+  M1(["管理员id"]) --- ADMIN;
+  M2(["账号"]) --- ADMIN;
+  M3(["密码哈希"]) --- ADMIN;
+  M4(["名称"]) --- ADMIN;
+  M5(["权限等级"]) --- ADMIN;
+
+  A1(["用户id"]) --- USER;
+  A2(["账号"]) --- USER;
+  A3(["密码哈希"]) --- USER;
+  A4(["显示名称"]) --- USER;
+  A5(["角色"]) --- USER;
+  A6(["启用状态"]) --- USER;
+  A7(["创建时间"]) --- USER;
+  A8(["更新时间"]) --- USER;
+  A9(["最后登录时间"]) --- USER;

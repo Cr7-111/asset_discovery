@@ -1,0 +1,12 @@
+corp-demo.test:53 {
+    log
+    errors
+    file /zones/corp-demo.host.db
+}
+
+.:53 {
+    log
+    errors
+    forward . 127.0.0.11
+}
+

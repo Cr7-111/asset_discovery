@@ -1,0 +1,22 @@
+{
+  "domain": "corp-demo.test",
+  "mode": "hybrid",
+  "nameservers": ["172.28.0.53"],
+  "dns_timeout": 2.0,
+  "http_timeout": [3, 5],
+  "verify_ssl": false,
+  "ports": [[80, "http"], [443, "https"]],
+  "passive_dns_api_url": "http://intel.corp-demo.test/hostsearch/?q={domain}",
+  "search_engine_url_template": "http://search.corp-demo.test/search?q={query}",
+  "enable_ct": false,
+  "enable_passive_dns": true,
+  "enable_traffic_sniff": true,
+  "enable_search": true,
+  "enable_icp": false,
+  "enable_cloud": false,
+  "enable_crawl": true,
+  "enable_js_extract": true,
+  "enable_certificate_parse": true,
+  "traffic_log_path": "/opt/lab-data/traffic/demo_traffic.log"
+}
+

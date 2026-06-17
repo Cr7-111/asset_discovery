@@ -1,0 +1,36 @@
+[ req ]
+default_bits       = 2048
+distinguished_name = req_distinguished_name
+x509_extensions    = v3_req
+prompt             = no
+
+[ req_distinguished_name ]
+C  = CN
+ST = HK
+L  = Hong Kong
+O  = Asset Discovery Lab
+OU = Demo Range
+CN = corp-demo.test
+
+[ v3_req ]
+subjectAltName = @alt_names
+basicConstraints = CA:FALSE
+keyUsage = digitalSignature, keyEncipherment
+extendedKeyUsage = serverAuth
+
+[ alt_names ]
+DNS.1  = corp-demo.test
+DNS.2  = www.corp-demo.test
+DNS.3  = api.corp-demo.test
+DNS.4  = admin.corp-demo.test
+DNS.5  = dev.corp-demo.test
+DNS.6  = docs.corp-demo.test
+DNS.7  = jenkins.corp-demo.test
+DNS.8  = console.corp-demo.test
+DNS.9  = sso.corp-demo.test
+DNS.10 = secure.corp-demo.test
+DNS.11 = status.corp-demo.test
+DNS.12 = vpn-gw.corp-demo.test
+DNS.13 = search.corp-demo.test
+DNS.14 = intel.corp-demo.test
+DNS.15 = manager.corp-demo.test

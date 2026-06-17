@@ -1,0 +1,66 @@
+{
+  "domain": "corp-demo.test",
+  "live_assets": [
+    {
+      "hostname": "corp-demo.test",
+      "expected_sources": ["active_dns", "web_crawl"]
+    },
+    {
+      "hostname": "www.corp-demo.test",
+      "expected_sources": ["active_dns", "web_crawl"]
+    },
+    {
+      "hostname": "api.corp-demo.test",
+      "expected_sources": ["active_dns", "js_extract", "web_crawl"]
+    },
+    {
+      "hostname": "admin.corp-demo.test",
+      "expected_sources": ["active_dns", "web_crawl"]
+    },
+    {
+      "hostname": "dev.corp-demo.test",
+      "expected_sources": ["active_dns", "web_crawl"]
+    },
+    {
+      "hostname": "docs.corp-demo.test",
+      "expected_sources": ["active_dns", "web_crawl", "search_engine"]
+    },
+    {
+      "hostname": "jenkins.corp-demo.test",
+      "expected_sources": ["active_dns", "search_engine"]
+    },
+    {
+      "hostname": "manager.corp-demo.test",
+      "expected_sources": ["active_dns", "passive_dns", "search_engine", "traffic_sniff", "certificate"],
+      "expected_ml_component": "Apache Tomcat",
+      "expected_ml_usage": "用于演示机器学习漏洞情报分析模块"
+    },
+    {
+      "hostname": "console.corp-demo.test",
+      "expected_sources": ["passive_dns", "search_engine", "certificate"]
+    },
+    {
+      "hostname": "sso.corp-demo.test",
+      "expected_sources": ["traffic_sniff", "certificate", "js_extract"]
+    },
+    {
+      "hostname": "secure.corp-demo.test",
+      "expected_sources": ["traffic_sniff", "certificate", "web_crawl"]
+    },
+    {
+      "hostname": "status.corp-demo.test",
+      "expected_sources": ["passive_dns", "search_engine", "certificate"]
+    },
+    {
+      "hostname": "vpn-gw.corp-demo.test",
+      "expected_sources": ["traffic_sniff", "web_crawl"]
+    }
+  ],
+  "stale_assets": [
+    {
+      "hostname": "legacy.corp-demo.test",
+      "expected_sources": ["passive_dns"],
+      "expected_status": "unresolved_or_dead"
+    }
+  ]
+}

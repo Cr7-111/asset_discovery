@@ -1,0 +1,49 @@
+graph TD;
+  ASSET["资产"];
+  ANALYSIS["资产分析"];
+  TAG["资产标签"];
+  RISK["风险评估结果"];
+  REL_CLASSIFY{"分类"};
+  REL_MARK{"标注"};
+  REL_SCORE{"评估"};
+
+  ASSET -->|1| REL_CLASSIFY;
+  REL_CLASSIFY -->|1| ANALYSIS;
+  ASSET -->|1| REL_MARK;
+  REL_MARK -->|N| TAG;
+  ASSET -->|1| REL_SCORE;
+  ANALYSIS -->|1| REL_SCORE;
+  TAG -->|N| REL_SCORE;
+  REL_SCORE -->|1| RISK;
+
+  A1(["资产id"]) --- ASSET;
+  A2(["域名"]) --- ASSET;
+  A3(["IP地址"]) --- ASSET;
+  A4(["端口"]) --- ASSET;
+  A5(["状态码"]) --- ASSET;
+  A6(["页面标题"]) --- ASSET;
+  A7(["服务信息"]) --- ASSET;
+  A8(["首次发现时间"]) --- ASSET;
+  A9(["最近发现时间"]) --- ASSET;
+
+  B1(["分析id"]) --- ANALYSIS;
+  B2(["资产id"]) --- ANALYSIS;
+  B3(["资产类型"]) --- ANALYSIS;
+  B4(["模型置信度"]) --- ANALYSIS;
+  B5(["分析时间"]) --- ANALYSIS;
+
+  C1(["标签id"]) --- TAG;
+  C2(["资产id"]) --- TAG;
+  C3(["标签名称"]) --- TAG;
+  C4(["标签来源"]) --- TAG;
+  C5(["置信度"]) --- TAG;
+  C6(["命中规则"]) --- TAG;
+  C7(["创建时间"]) --- TAG;
+
+  D1(["风险id"]) --- RISK;
+  D2(["资产id"]) --- RISK;
+  D3(["风险分值"]) --- RISK;
+  D4(["风险等级"]) --- RISK;
+  D5(["评分详情"]) --- RISK;
+  D6(["修复建议"]) --- RISK;
+  D7(["评估时间"]) --- RISK;

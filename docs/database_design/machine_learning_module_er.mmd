@@ -1,0 +1,51 @@
+graph TD;
+  ASSET["资产"];
+  ML["机器学习分析"];
+  CVEKB["CVE知识库"];
+  MODEL["严重等级模型"];
+  REL_ANALYZE{"生成"};
+  REL_MATCH{"匹配"};
+  REL_PREDICT{"预测"};
+
+  ASSET -->|1| REL_ANALYZE;
+  REL_ANALYZE -->|1| ML;
+  CVEKB -->|N| REL_MATCH;
+  REL_MATCH -->|1| ML;
+  MODEL -->|1| REL_PREDICT;
+  REL_PREDICT -->|N| ML;
+
+  A1(["资产id"]) --- ASSET;
+  A2(["域名"]) --- ASSET;
+  A3(["IP地址"]) --- ASSET;
+  A4(["端口"]) --- ASSET;
+  A5(["状态码"]) --- ASSET;
+  A6(["标题"]) --- ASSET;
+  A7(["服务"]) --- ASSET;
+
+  B1(["分析id"]) --- ML;
+  B2(["资产id"]) --- ML;
+  B3(["组件名称"]) --- ML;
+  B4(["组件置信度"]) --- ML;
+  B5(["匹配证据"]) --- ML;
+  B6(["匹配CVE"]) --- ML;
+  B7(["严重性统计"]) --- ML;
+  B8(["风险分值"]) --- ML;
+  B9(["风险等级"]) --- ML;
+  B10(["薄弱点"]) --- ML;
+  B11(["分析说明"]) --- ML;
+  B12(["模型名称"]) --- ML;
+  B13(["创建时间"]) --- ML;
+  B14(["更新时间"]) --- ML;
+
+  C1(["CVE编号"]) --- CVEKB;
+  C2(["漏洞描述"]) --- CVEKB;
+  C3(["训练文本"]) --- CVEKB;
+  C4(["CVSS分数"]) --- CVEKB;
+  C5(["严重等级"]) --- CVEKB;
+  C6(["组件关键词"]) --- CVEKB;
+
+  D1(["模型名称"]) --- MODEL;
+  D2(["模型路径"]) --- MODEL;
+  D3(["特征方法"]) --- MODEL;
+  D4(["训练样本"]) --- MODEL;
+  D5(["准确率"]) --- MODEL;

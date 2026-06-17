@@ -1,0 +1,28 @@
+$ORIGIN corp-demo.test.
+$TTL 300
+
+@       IN SOA ns1.corp-demo.test. admin.corp-demo.test. (
+            2026042603
+            7200
+            3600
+            1209600
+            300
+)
+@       IN NS  ns1.corp-demo.test.
+ns1     IN A   127.0.0.1
+
+@         IN A 127.0.0.1
+www       IN A 127.0.0.1
+api       IN A 127.0.0.1
+admin     IN A 127.0.0.1
+dev       IN A 127.0.0.1
+docs      IN A 127.0.0.1
+jenkins   IN A 127.0.0.1
+manager   IN A 127.0.0.1
+console   IN A 127.0.0.1
+sso       IN A 127.0.0.1
+secure    IN A 127.0.0.1
+status    IN A 127.0.0.1
+vpn-gw    IN A 127.0.0.1
+search    IN A 127.0.0.1
+intel     IN A 127.0.0.1

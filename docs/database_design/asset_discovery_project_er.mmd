@@ -1,0 +1,61 @@
+graph TD;
+  RUN["发现任务"];
+  RECORD["发现记录"];
+  VALIDATION["验证记录"];
+  ASSET["资产"];
+  REL_DISCOVER{"产生"};
+  REL_VERIFY{"验证"};
+  REL_STORE{"入库"};
+
+  RUN -->|1| REL_DISCOVER;
+  REL_DISCOVER -->|N| RECORD;
+  RUN -->|1| REL_VERIFY;
+  REL_VERIFY -->|N| VALIDATION;
+  VALIDATION -->|N| REL_STORE;
+  REL_STORE -->|1| ASSET;
+
+  A1(["任务id"]) --- RUN;
+  A2(["扫描域名"]) --- RUN;
+  A3(["扫描模式"]) --- RUN;
+  A4(["任务状态"]) --- RUN;
+  A5(["扫描参数"]) --- RUN;
+  A6(["结果摘要"]) --- RUN;
+  A7(["开始时间"]) --- RUN;
+  A8(["完成时间"]) --- RUN;
+
+  B1(["记录id"]) --- RECORD;
+  B2(["任务id"]) --- RECORD;
+  B3(["发现阶段"]) --- RECORD;
+  B4(["子域名"]) --- RECORD;
+  B5(["IP地址"]) --- RECORD;
+  B6(["发现来源"]) --- RECORD;
+  B7(["证据文本"]) --- RECORD;
+  B8(["URL列表"]) --- RECORD;
+  B9(["JS端点列表"]) --- RECORD;
+  B10(["置信度分值"]) --- RECORD;
+  B11(["验证状态"]) --- RECORD;
+  B12(["原始载荷"]) --- RECORD;
+  B13(["创建时间"]) --- RECORD;
+
+  C1(["验证id"]) --- VALIDATION;
+  C2(["任务id"]) --- VALIDATION;
+  C3(["子域名"]) --- VALIDATION;
+  C4(["IP地址"]) --- VALIDATION;
+  C5(["端口"]) --- VALIDATION;
+  C6(["协议"]) --- VALIDATION;
+  C7(["状态码"]) --- VALIDATION;
+  C8(["页面标题"]) --- VALIDATION;
+  C9(["服务信息"]) --- VALIDATION;
+  C10(["成功标识"]) --- VALIDATION;
+  C11(["证书主题"]) --- VALIDATION;
+  C12(["验证时间"]) --- VALIDATION;
+
+  D1(["资产id"]) --- ASSET;
+  D2(["域名"]) --- ASSET;
+  D3(["IP地址"]) --- ASSET;
+  D4(["端口"]) --- ASSET;
+  D5(["状态码"]) --- ASSET;
+  D6(["页面标题"]) --- ASSET;
+  D7(["服务信息"]) --- ASSET;
+  D8(["首次发现时间"]) --- ASSET;
+  D9(["最近发现时间"]) --- ASSET;

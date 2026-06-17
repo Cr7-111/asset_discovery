@@ -1,0 +1,148 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="760" viewBox="0 0 1180 760">
+  <style>
+    .line { stroke: #1b2540; stroke-width: 1.6; fill: none; }
+    .entity { fill: #ffffff; stroke: #1b2540; stroke-width: 1.8; }
+    .rel { fill: #ffffff; stroke: #1b2540; stroke-width: 1.8; }
+    .attr { fill: #ffffff; stroke: #1b2540; stroke-width: 1.8; }
+    .label { font-family: "Microsoft YaHei", "SimSun", Arial, sans-serif; font-size: 16px; fill: #111827; text-anchor: middle; dominant-baseline: middle; }
+    .card { font-family: "Microsoft YaHei", "SimSun", Arial, sans-serif; font-size: 17px; font-weight: 600; fill: #111827; text-anchor: middle; dominant-baseline: middle; }
+    .mark { font-family: "Microsoft YaHei", "SimSun", Arial, sans-serif; font-size: 15px; fill: #111827; text-anchor: middle; dominant-baseline: middle; }
+  </style>
+
+  <rect width="1180" height="760" fill="#ffffff"/>
+
+  <g>
+    <line class="line" x1="560" y1="125" x2="465" y2="280"/>
+    <line class="line" x1="415" y1="320" x2="310" y2="490"/>
+    <text class="mark" x="520" y="178">1</text>
+    <text class="mark" x="350" y="430">N</text>
+
+    <line class="line" x1="620" y1="125" x2="715" y2="280"/>
+    <line class="line" x1="765" y1="320" x2="890" y2="490"/>
+    <text class="mark" x="660" y="178">1</text>
+    <text class="mark" x="835" y="430">N</text>
+  </g>
+
+  <g>
+    <line class="line" x1="420" y1="35" x2="545" y2="95"/>
+    <line class="line" x1="565" y1="30" x2="580" y2="85"/>
+    <line class="line" x1="725" y1="35" x2="635" y2="95"/>
+    <line class="line" x1="370" y1="120" x2="545" y2="110"/>
+    <line class="line" x1="810" y1="120" x2="635" y2="110"/>
+    <line class="line" x1="470" y1="190" x2="555" y2="125"/>
+    <line class="line" x1="610" y1="190" x2="600" y2="125"/>
+    <line class="line" x1="750" y1="190" x2="625" y2="125"/>
+
+    <line class="line" x1="120" y1="360" x2="265" y2="495"/>
+    <line class="line" x1="250" y1="350" x2="285" y2="490"/>
+    <line class="line" x1="380" y1="350" x2="320" y2="490"/>
+    <line class="line" x1="85" y1="455" x2="265" y2="505"/>
+    <line class="line" x1="85" y1="565" x2="265" y2="520"/>
+    <line class="line" x1="135" y1="650" x2="275" y2="530"/>
+    <line class="line" x1="280" y1="705" x2="300" y2="530"/>
+    <line class="line" x1="430" y1="650" x2="335" y2="530"/>
+    <line class="line" x1="530" y1="560" x2="355" y2="520"/>
+    <line class="line" x1="530" y1="455" x2="355" y2="500"/>
+    <line class="line" x1="455" y1="400" x2="335" y2="490"/>
+    <line class="line" x1="320" y1="410" x2="310" y2="490"/>
+
+    <line class="line" x1="710" y1="350" x2="855" y2="490"/>
+    <line class="line" x1="850" y1="350" x2="875" y2="490"/>
+    <line class="line" x1="1000" y1="350" x2="900" y2="490"/>
+    <line class="line" x1="1100" y1="430" x2="935" y2="500"/>
+    <line class="line" x1="1100" y1="535" x2="935" y2="520"/>
+    <line class="line" x1="1040" y1="645" x2="925" y2="530"/>
+    <line class="line" x1="900" y1="705" x2="895" y2="530"/>
+    <line class="line" x1="760" y1="650" x2="860" y2="530"/>
+    <line class="line" x1="665" y1="555" x2="845" y2="520"/>
+    <line class="line" x1="665" y1="455" x2="845" y2="500"/>
+    <line class="line" x1="740" y1="400" x2="860" y2="490"/>
+    <line class="line" x1="900" y1="410" x2="890" y2="490"/>
+  </g>
+
+  <g>
+    <rect class="entity" x="545" y="85" width="90" height="40"/>
+    <text class="card" x="590" y="105">发现任务</text>
+
+    <polygon class="rel" points="440,270 490,300 440,330 390,300"/>
+    <text class="card" x="440" y="300">产生</text>
+
+    <polygon class="rel" points="740,270 790,300 740,330 690,300"/>
+    <text class="card" x="740" y="300">验证</text>
+
+    <rect class="entity" x="265" y="490" width="90" height="40"/>
+    <text class="card" x="310" y="510">发现记录</text>
+
+    <rect class="entity" x="845" y="490" width="90" height="40"/>
+    <text class="card" x="890" y="510">验证记录</text>
+  </g>
+
+  <g>
+    <ellipse class="attr" cx="420" cy="35" rx="48" ry="20"/>
+    <text class="label" x="420" y="35">任务id</text>
+    <ellipse class="attr" cx="565" cy="30" rx="58" ry="20"/>
+    <text class="label" x="565" y="30">扫描域名</text>
+    <ellipse class="attr" cx="725" cy="35" rx="58" ry="20"/>
+    <text class="label" x="725" y="35">扫描模式</text>
+    <ellipse class="attr" cx="370" cy="120" rx="58" ry="20"/>
+    <text class="label" x="370" y="120">任务状态</text>
+    <ellipse class="attr" cx="810" cy="120" rx="58" ry="20"/>
+    <text class="label" x="810" y="120">扫描参数</text>
+    <ellipse class="attr" cx="470" cy="190" rx="58" ry="20"/>
+    <text class="label" x="470" y="190">结果摘要</text>
+    <ellipse class="attr" cx="610" cy="190" rx="58" ry="20"/>
+    <text class="label" x="610" y="190">开始时间</text>
+    <ellipse class="attr" cx="750" cy="190" rx="58" ry="20"/>
+    <text class="label" x="750" y="190">完成时间</text>
+
+    <ellipse class="attr" cx="120" cy="360" rx="48" ry="20"/>
+    <text class="label" x="120" y="360">记录id</text>
+    <ellipse class="attr" cx="250" cy="350" rx="48" ry="20"/>
+    <text class="label" x="250" y="350">任务id</text>
+    <ellipse class="attr" cx="380" cy="350" rx="58" ry="20"/>
+    <text class="label" x="380" y="350">发现阶段</text>
+    <ellipse class="attr" cx="85" cy="455" rx="48" ry="20"/>
+    <text class="label" x="85" y="455">子域名</text>
+    <ellipse class="attr" cx="85" cy="565" rx="48" ry="20"/>
+    <text class="label" x="85" y="565">IP地址</text>
+    <ellipse class="attr" cx="135" cy="650" rx="42" ry="20"/>
+    <text class="label" x="135" y="650">来源</text>
+    <ellipse class="attr" cx="280" cy="705" rx="58" ry="20"/>
+    <text class="label" x="280" y="705">证据文本</text>
+    <ellipse class="attr" cx="430" cy="650" rx="52" ry="20"/>
+    <text class="label" x="430" y="650">URL列表</text>
+    <ellipse class="attr" cx="530" cy="560" rx="68" ry="20"/>
+    <text class="label" x="530" y="560">JS端点列表</text>
+    <ellipse class="attr" cx="530" cy="455" rx="48" ry="20"/>
+    <text class="label" x="530" y="455">置信度</text>
+    <ellipse class="attr" cx="455" cy="400" rx="58" ry="20"/>
+    <text class="label" x="455" y="400">验证状态</text>
+    <ellipse class="attr" cx="320" cy="410" rx="58" ry="20"/>
+    <text class="label" x="320" y="410">创建时间</text>
+
+    <ellipse class="attr" cx="710" cy="350" rx="48" ry="20"/>
+    <text class="label" x="710" y="350">验证id</text>
+    <ellipse class="attr" cx="850" cy="350" rx="48" ry="20"/>
+    <text class="label" x="850" y="350">任务id</text>
+    <ellipse class="attr" cx="1000" cy="350" rx="48" ry="20"/>
+    <text class="label" x="1000" y="350">子域名</text>
+    <ellipse class="attr" cx="1100" cy="430" rx="48" ry="20"/>
+    <text class="label" x="1100" y="430">IP地址</text>
+    <ellipse class="attr" cx="1100" cy="535" rx="42" ry="20"/>
+    <text class="label" x="1100" y="535">端口</text>
+    <ellipse class="attr" cx="1040" cy="645" rx="42" ry="20"/>
+    <text class="label" x="1040" y="645">协议</text>
+    <ellipse class="attr" cx="900" cy="705" rx="52" ry="20"/>
+    <text class="label" x="900" y="705">状态码</text>
+    <ellipse class="attr" cx="760" cy="650" rx="42" ry="20"/>
+    <text class="label" x="760" y="650">标题</text>
+    <ellipse class="attr" cx="665" cy="555" rx="42" ry="20"/>
+    <text class="label" x="665" y="555">服务</text>
+    <ellipse class="attr" cx="665" cy="455" rx="58" ry="20"/>
+    <text class="label" x="665" y="455">成功标识</text>
+    <ellipse class="attr" cx="740" cy="400" rx="58" ry="20"/>
+    <text class="label" x="740" y="400">错误信息</text>
+    <ellipse class="attr" cx="900" cy="410" rx="58" ry="20"/>
+    <text class="label" x="900" y="410">验证时间</text>
+  </g>
+</svg>

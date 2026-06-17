@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="680" viewBox="0 0 980 680">
+  <style>
+    .line { stroke: #1b2540; stroke-width: 1.6; fill: none; }
+    .entity { fill: #ffffff; stroke: #1b2540; stroke-width: 1.8; }
+    .rel { fill: #ffffff; stroke: #1b2540; stroke-width: 1.8; }
+    .attr { fill: #ffffff; stroke: #1b2540; stroke-width: 1.8; }
+    .label { font-family: "Microsoft YaHei", "SimSun", Arial, sans-serif; font-size: 16px; fill: #111827; text-anchor: middle; dominant-baseline: middle; }
+    .card { font-family: "Microsoft YaHei", "SimSun", Arial, sans-serif; font-size: 17px; font-weight: 600; fill: #111827; text-anchor: middle; dominant-baseline: middle; }
+    .mark { font-family: "Microsoft YaHei", "SimSun", Arial, sans-serif; font-size: 15px; fill: #111827; text-anchor: middle; dominant-baseline: middle; }
+  </style>
+
+  <rect width="980" height="680" fill="#ffffff"/>
+
+  <g>
+    <line class="line" x1="210" y1="102" x2="300" y2="190"/>
+    <line class="line" x1="360" y1="225" x2="445" y2="315"/>
+    <text class="mark" x="236" y="132">1</text>
+    <text class="mark" x="424" y="292">1</text>
+
+    <line class="line" x1="210" y1="558" x2="300" y2="468"/>
+    <line class="line" x1="360" y1="442" x2="445" y2="345"/>
+    <text class="mark" x="236" y="530">N</text>
+    <text class="mark" x="424" y="370">1</text>
+  </g>
+
+  <g>
+    <line class="line" x1="60" y1="35" x2="165" y2="102"/>
+    <line class="line" x1="165" y1="28" x2="165" y2="82"/>
+    <line class="line" x1="280" y1="52" x2="210" y2="102"/>
+    <line class="line" x1="60" y1="168" x2="120" y2="112"/>
+    <line class="line" x1="250" y1="168" x2="205" y2="112"/>
+
+    <line class="line" x1="640" y1="125" x2="490" y2="310"/>
+    <line class="line" x1="775" y1="155" x2="535" y2="310"/>
+    <line class="line" x1="870" y1="230" x2="535" y2="320"/>
+    <line class="line" x1="875" y1="330" x2="535" y2="330"/>
+    <line class="line" x1="850" y1="430" x2="535" y2="340"/>
+    <line class="line" x1="760" y1="505" x2="520" y2="350"/>
+    <line class="line" x1="640" y1="540" x2="495" y2="350"/>
+    <line class="line" x1="590" y1="210" x2="500" y2="310"/>
+    <line class="line" x1="610" y1="450" x2="500" y2="350"/>
+
+    <line class="line" x1="60" y1="500" x2="120" y2="550"/>
+    <line class="line" x1="60" y1="622" x2="120" y2="566"/>
+    <line class="line" x1="165" y1="650" x2="165" y2="578"/>
+    <line class="line" x1="280" y1="622" x2="210" y2="568"/>
+    <line class="line" x1="280" y1="500" x2="210" y2="550"/>
+    <line class="line" x1="165" y1="468" x2="165" y2="538"/>
+    <line class="line" x1="335" y1="558" x2="210" y2="558"/>
+  </g>
+
+  <g>
+    <rect class="entity" x="120" y="82" width="90" height="40"/>
+    <text class="card" x="165" y="102">资产分析</text>
+
+    <polygon class="rel" points="330,180 380,210 330,240 280,210"/>
+    <text class="card" x="330" y="210">分类</text>
+
+    <rect class="entity" x="445" y="310" width="90" height="40"/>
+    <text class="card" x="490" y="330">资产</text>
+
+    <polygon class="rel" points="330,422 380,452 330,482 280,452"/>
+    <text class="card" x="330" y="452">标注</text>
+
+    <rect class="entity" x="120" y="538" width="90" height="40"/>
+    <text class="card" x="165" y="558">资产标签</text>
+  </g>
+
+  <g>
+    <ellipse class="attr" cx="60" cy="35" rx="48" ry="20"/>
+    <text class="label" x="60" y="35">分析id</text>
+    <ellipse class="attr" cx="165" cy="28" rx="48" ry="20"/>
+    <text class="label" x="165" y="28">资产id</text>
+    <ellipse class="attr" cx="280" cy="52" rx="58" ry="20"/>
+    <text class="label" x="280" y="52">资产类型</text>
+    <ellipse class="attr" cx="60" cy="168" rx="60" ry="20"/>
+    <text class="label" x="60" y="168">模型置信度</text>
+    <ellipse class="attr" cx="250" cy="168" rx="54" ry="20"/>
+    <text class="label" x="250" y="168">分析时间</text>
+
+    <ellipse class="attr" cx="640" cy="125" rx="48" ry="20"/>
+    <text class="label" x="640" y="125">资产id</text>
+    <ellipse class="attr" cx="775" cy="155" rx="42" ry="20"/>
+    <text class="label" x="775" y="155">域名</text>
+    <ellipse class="attr" cx="870" cy="230" rx="46" ry="20"/>
+    <text class="label" x="870" y="230">IP地址</text>
+    <ellipse class="attr" cx="875" cy="330" rx="42" ry="20"/>
+    <text class="label" x="875" y="330">端口</text>
+    <ellipse class="attr" cx="850" cy="430" rx="52" ry="20"/>
+    <text class="label" x="850" y="430">状态码</text>
+    <ellipse class="attr" cx="760" cy="505" rx="42" ry="20"/>
+    <text class="label" x="760" y="505">标题</text>
+    <ellipse class="attr" cx="640" cy="540" rx="42" ry="20"/>
+    <text class="label" x="640" y="540">服务</text>
+    <ellipse class="attr" cx="590" cy="210" rx="68" ry="20"/>
+    <text class="label" x="590" y="210">首次发现时间</text>
+    <ellipse class="attr" cx="610" cy="450" rx="68" ry="20"/>
+    <text class="label" x="610" y="450">最近发现时间</text>
+
+    <ellipse class="attr" cx="60" cy="500" rx="48" ry="20"/>
+    <text class="label" x="60" y="500">标签id</text>
+    <ellipse class="attr" cx="60" cy="622" rx="48" ry="20"/>
+    <text class="label" x="60" y="622">资产id</text>
+    <ellipse class="attr" cx="165" cy="650" rx="58" ry="20"/>
+    <text class="label" x="165" y="650">标签名称</text>
+    <ellipse class="attr" cx="280" cy="622" rx="58" ry="20"/>
+    <text class="label" x="280" y="622">标签来源</text>
+    <ellipse class="attr" cx="280" cy="500" rx="48" ry="20"/>
+    <text class="label" x="280" y="500">置信度</text>
+    <ellipse class="attr" cx="165" cy="468" rx="58" ry="20"/>
+    <text class="label" x="165" y="468">命中规则</text>
+    <ellipse class="attr" cx="335" cy="558" rx="54" ry="20"/>
+    <text class="label" x="335" y="558">创建时间</text>
+  </g>
+</svg>

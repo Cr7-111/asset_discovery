@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="520" viewBox="0 0 760 520">
+  <title>用户管理模块 E-R 图</title>
+  <rect width="100%" height="100%" fill="#ffffff"/>
+  <defs>
+    <style>
+      .entity,.attr,.rel{fill:#fff;stroke:#17213c;stroke-width:1.6}.line{stroke:#17213c;stroke-width:1.35;fill:none}
+      .label{font:15px "Microsoft YaHei","SimSun",Arial,sans-serif;fill:#111827;dominant-baseline:middle;text-anchor:middle}
+      .small{font:13px "Microsoft YaHei","SimSun",Arial,sans-serif;fill:#111827;dominant-baseline:middle;text-anchor:middle}
+    </style>
+  </defs>
+
+  <line class="line" x1="190" y1="260" x2="380" y2="260"/>
+  <line class="line" x1="380" y1="260" x2="570" y2="260"/>
+  <text class="small" x="250" y="245">1</text>
+  <text class="small" x="510" y="245">N</text>
+
+  <line class="line" x1="190" y1="260" x2="90" y2="120"/>
+  <line class="line" x1="190" y1="260" x2="210" y2="80"/>
+  <line class="line" x1="190" y1="260" x2="330" y2="120"/>
+  <line class="line" x1="190" y1="260" x2="95" y2="400"/>
+  <line class="line" x1="190" y1="260" x2="285" y2="420"/>
+
+  <line class="line" x1="570" y1="260" x2="470" y2="95"/>
+  <line class="line" x1="570" y1="260" x2="595" y2="70"/>
+  <line class="line" x1="570" y1="260" x2="705" y2="115"/>
+  <line class="line" x1="570" y1="260" x2="705" y2="225"/>
+  <line class="line" x1="570" y1="260" x2="705" y2="335"/>
+  <line class="line" x1="570" y1="260" x2="620" y2="455"/>
+  <line class="line" x1="570" y1="260" x2="470" y2="435"/>
+
+  <rect class="entity" x="138" y="235" width="104" height="50"/>
+  <text class="label" x="190" y="260">管理员</text>
+  <polygon class="rel" points="380,230 430,260 380,290 330,260"/>
+  <text class="small" x="380" y="260">管理</text>
+  <rect class="entity" x="518" y="235" width="104" height="50"/>
+  <text class="label" x="570" y="260">用户</text>
+
+  <ellipse class="attr" cx="90" cy="120" rx="52" ry="22"/><text class="small" x="90" y="120">管理员id</text>
+  <ellipse class="attr" cx="210" cy="80" rx="46" ry="22"/><text class="small" x="210" y="80">账号</text>
+  <ellipse class="attr" cx="330" cy="120" rx="58" ry="22"/><text class="small" x="330" y="120">密码哈希</text>
+  <ellipse class="attr" cx="95" cy="400" rx="46" ry="22"/><text class="small" x="95" y="400">名称</text>
+  <ellipse class="attr" cx="285" cy="420" rx="58" ry="22"/><text class="small" x="285" y="420">权限等级</text>
+
+  <ellipse class="attr" cx="470" cy="95" rx="48" ry="22"/><text class="small" x="470" y="95">用户id</text>
+  <ellipse class="attr" cx="595" cy="70" rx="46" ry="22"/><text class="small" x="595" y="70">账号</text>
+  <ellipse class="attr" cx="705" cy="115" rx="58" ry="22"/><text class="small" x="705" y="115">显示名称</text>
+  <ellipse class="attr" cx="705" cy="225" rx="46" ry="22"/><text class="small" x="705" y="225">角色</text>
+  <ellipse class="attr" cx="705" cy="335" rx="58" ry="22"/><text class="small" x="705" y="335">启用状态</text>
+  <ellipse class="attr" cx="620" cy="455" rx="58" ry="22"/><text class="small" x="620" y="455">最后登录</text>
+  <ellipse class="attr" cx="470" cy="435" rx="58" ry="22"/><text class="small" x="470" y="435">创建时间</text>
+</svg>

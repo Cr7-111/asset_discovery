@@ -1,0 +1,38 @@
+[
+  {
+    "model": "logistic_regression",
+    "model_path": "models\\cve_severity\\logistic_regression.pkl",
+    "accuracy": 0.951197738431781,
+    "macro_precision": 0.8964832105358286,
+    "macro_recall": 0.9579038724364941,
+    "macro_f1": 0.9225849921459404,
+    "weighted_precision": 0.9549154181187726,
+    "weighted_recall": 0.951197738431781,
+    "weighted_f1": 0.9520918135463194,
+    "train_seconds": 41.207597599997825
+  },
+  {
+    "model": "linear_svm",
+    "model_path": "models\\cve_severity\\linear_svm.pkl",
+    "accuracy": 0.9279497098646035,
+    "macro_precision": 0.9181738288143461,
+    "macro_recall": 0.902074010035773,
+    "macro_f1": 0.9095854567466773,
+    "weighted_precision": 0.9276652806729925,
+    "weighted_recall": 0.9279497098646035,
+    "weighted_f1": 0.9277172983278603,
+    "train_seconds": 50.8449449999971
+  },
+  {
+    "model": "random_forest",
+    "model_path": "models\\cve_severity\\random_forest.pkl",
+    "accuracy": 0.969721767594108,
+    "macro_precision": 0.9460949067855738,
+    "macro_recall": 0.9635879266270783,
+    "macro_f1": 0.954446116657256,
+    "weighted_precision": 0.9700925348795318,
+    "weighted_recall": 0.969721767594108,
+    "weighted_f1": 0.969844966088907,
+    "train_seconds": 153.8268478999962
+  }
+]
